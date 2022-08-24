@@ -13,17 +13,5 @@ print ('Введите координаты точки B:')
 x2 = int (input('x2 = ' ))
 y2 = int (input('y2 = ' ))
 
-xmax = max (x1, x2)
-xmin = min (x1, x2)
-ymax = max (y1, y2)
-ymin = min (y1, y2)
-
-if ((x1 == x2) and (y1 == y2)):
-    print ('0')
-elif x1 == x2:
-    print (ymax - ymin)
-elif y1 == y2:
-    print (xmax - xmin)
-else:
-    print (round (((((xmax - xmin)**2) + ((ymax - ymin)**2))**0.5), 2))
+print (round (((((x1 - x2)**2) + ((y1 - y2)**2))**0.5), 2))
     
